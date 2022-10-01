@@ -1,0 +1,190 @@
+apiVersion: v1
+entries:
+  access-gateway:
+  - apiVersion: v2
+    appVersion: 12.8.07.2899
+    created: "2022-10-01T00:56:29.420548628Z"
+    description: 2022.Sept.02 - Helm chart to deploy SiteMinder Access-Gateway
+    digest: 8a27d4c07051e5fba7bfbda7cb2b542554f4432f83917a663706039157d1a0b8
+    name: access-gateway
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ag/access-gateway-1.0.2899.tgz
+    version: 1.0.2899
+  - apiVersion: v2
+    appVersion: 12.8.07.2894
+    created: "2022-10-01T00:56:29.417703841Z"
+    description: 2022.Sep.01 - Helm chart to deploy SiteMinder Access-Gateway
+    digest: 26b1a10d343a98abe9ba5ca75e3c711bcdbec29050997e3d85477a83fab30ef7
+    name: access-gateway
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ag/access-gateway-1.0.2894.tgz
+    version: 1.0.2894
+  - apiVersion: v2
+    appVersion: 12.8.07.2884
+    created: "2022-10-01T00:56:29.415467199Z"
+    description: 2022.June.01 - Helm chart to deploy SiteMinder Access-Gateway
+    digest: 80616d43b1c3f4b7a3b3ab34fb33e83603ccbeff1e50ae8ebc85ef4641877505
+    name: access-gateway
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ag/access-gateway-1.0.2884.tgz
+    version: 1.0.2884
+  - apiVersion: v2
+    appVersion: 12.8.07.2862
+    created: "2022-10-01T00:56:29.413828355Z"
+    description: 2022.May.01 - Helm chart to deploy SiteMinder Access-Gateway
+    digest: c7d7fef0804b36ed9dd0b534971d58d26d497408b120c6de95cc9ae90f1050fd
+    name: access-gateway
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ag/access-gateway-1.0.2862.tgz
+    version: 1.0.2862
+  - apiVersion: v2
+    appVersion: 12.8.07.2860
+    created: "2022-10-01T00:56:29.412136533Z"
+    description: A Helm chart for Siteminder Access Gateway
+    digest: 3ed3ac6d7d7e6a7f7b4b51946ec4336a7f7c52ad3140e93bbf670a86b52a86a4
+    name: access-gateway
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ag/access-gateway-1.0.2860.tgz
+    version: 1.0.2860
+  server-components:
+  - apiVersion: v2
+    appVersion: 12.8.07.2899
+    created: "2022-10-01T00:56:29.436704804Z"
+    description: 2022.Sept.02 - Helm chart to deploy SiteMinder Server Components
+    digest: 635ba4e38ae097ad043b5ad904a1a56d3551302a838b7e81c2f8af18a27a9146
+    name: server-components
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ps/server-components-1.0.2899.tgz
+    version: 1.0.2899
+  - apiVersion: v2
+    appVersion: 12.8.07.2894
+    created: "2022-10-01T00:56:29.434052975Z"
+    description: 2022.Sep.01 - Helm chart to deploy SiteMinder Server Components
+    digest: 31031398c4108616e2c71cf00a7bb0abfde13990258ac33c208952179bc53a10
+    name: server-components
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ps/server-components-1.0.2894.tgz
+    version: 1.0.2894
+  - apiVersion: v2
+    appVersion: 12.8.07.2884
+    created: "2022-10-01T00:56:29.431284242Z"
+    description: 2022.June.01 - Helm chart to deploy SiteMinder Server Components
+    digest: cd1ed7793dd15ee38ec15523956b24c0f09bedfb1e9880f1fc705886309bbf81
+    name: server-components
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ps/server-components-1.0.2884.tgz
+    version: 1.0.2884
+  - apiVersion: v2
+    appVersion: 12.8.07.2862
+    created: "2022-10-01T00:56:29.428575134Z"
+    description: 2022.May.01 - Helm chart to deploy SiteMinder Server Components
+    digest: 0bc2126d848622b98905a7c36f6f54e792c98a5431a3fdc5947471f758156ef7
+    name: server-components
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ps/server-components-1.0.2862.tgz
+    version: 1.0.2862
+  - apiVersion: v2
+    appVersion: 12.8.07.2860
+    created: "2022-10-01T00:56:29.424860886Z"
+    description: A Helm chart for SiteMinder Server Components
+    digest: ab547e76cfb3c82e45576b6a56dc99a96b49a852e628efa3f83ad66cd617963f
+    name: server-components
+    urls:
+    - https://tc09-brcm.github.io/siteminder/ps/server-components-1.0.2860.tgz
+    version: 1.0.2860
+  siteminder-infra:
+  - apiVersion: v2
+    appVersion: 12.8.07.2899
+    created: "2022-10-01T00:56:29.460681105Z"
+    dependencies:
+    - condition: fluent-bit.enabled
+      name: fluent-bit
+      repository: https://fluent.github.io/helm-charts
+      version: 0.19.5
+    - condition: prometheus-adapter.enabled
+      name: prometheus-adapter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 3.0.0
+    description: 2022.Sept.02 - Helm chart to deploy SiteMinder Infra chart
+    digest: 261eb0cefd81d93282937b3c3f23a8df74ecc81893857d0a09f417dd95845a8e
+    name: siteminder-infra
+    type: application
+    urls:
+    - https://tc09-brcm.github.io/siteminder/siteminderinfra/siteminder-infra-1.0.2899.tgz
+    version: 1.0.2899
+  - apiVersion: v2
+    appVersion: 12.8.07.2894
+    created: "2022-10-01T00:56:29.457108877Z"
+    dependencies:
+    - condition: fluent-bit.enabled
+      name: fluent-bit
+      repository: https://fluent.github.io/helm-charts
+      version: 0.19.5
+    - condition: prometheus-adapter.enabled
+      name: prometheus-adapter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 3.0.0
+    description: 2022.Sep.01 - Helm chart to deploy SiteMinder Infra chart
+    digest: e827a74778cd1168ff6e69613178fee0a5a073ffaeb34c5d05a09f9171560f43
+    name: siteminder-infra
+    type: application
+    urls:
+    - https://tc09-brcm.github.io/siteminder/siteminderinfra/siteminder-infra-1.0.2894.tgz
+    version: 1.0.2894
+  - apiVersion: v2
+    appVersion: 12.8.07.2884
+    created: "2022-10-01T00:56:29.453499784Z"
+    dependencies:
+    - condition: fluent-bit.enabled
+      name: fluent-bit
+      repository: https://fluent.github.io/helm-charts
+      version: 0.19.5
+    - condition: prometheus-adapter.enabled
+      name: prometheus-adapter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 3.0.0
+    description: 2022.June.01 - Helm chart to deploy SiteMinder Infra chart
+    digest: 033da0431ca307b9b15027b47794759b7cd54152e10cd76e5617d3940d60f41b
+    name: siteminder-infra
+    type: application
+    urls:
+    - https://tc09-brcm.github.io/siteminder/siteminderinfra/siteminder-infra-1.0.2884.tgz
+    version: 1.0.2884
+  - apiVersion: v2
+    appVersion: 12.8.07.2862
+    created: "2022-10-01T00:56:29.448794901Z"
+    dependencies:
+    - condition: fluent-bit.enabled
+      name: fluent-bit
+      repository: https://fluent.github.io/helm-charts
+      version: 0.19.5
+    - condition: prometheus-adapter.enabled
+      name: prometheus-adapter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 3.0.0
+    description: 2022.May.01 - Helm chart to deploy SiteMinder Infra chart
+    digest: 1109d4364ccee153b1a0ba547273acc2ea5c20dbf01a71e3b13d10e16b380200
+    name: siteminder-infra
+    type: application
+    urls:
+    - https://tc09-brcm.github.io/siteminder/siteminderinfra/siteminder-infra-1.0.2862.tgz
+    version: 1.0.2862
+  - apiVersion: v2
+    appVersion: 12.8.07.2860
+    created: "2022-10-01T00:56:29.443077163Z"
+    dependencies:
+    - condition: fluent-bit.enabled
+      name: fluent-bit
+      repository: https://fluent.github.io/helm-charts
+      version: 0.19.5
+    - condition: prometheus-adapter.enabled
+      name: prometheus-adapter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 3.0.0
+    digest: 8cc33b6a9b4a489d49a1195aff517936e4566f7b992bb8b5d2dfbe4be8c9ec1e
+    name: siteminder-infra
+    type: application
+    urls:
+    - https://tc09-brcm.github.io/siteminder/siteminder-infra/siteminder-infra-1.0.2860.tgz
+    version: 1.0.2860
+generated: "2022-10-01T00:56:29.410129562Z"
